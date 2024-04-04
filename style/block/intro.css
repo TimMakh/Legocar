@@ -1,0 +1,61 @@
+.intro {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .intro {
+    min-width: 1024px;
+    min-height: 40px;
+    padding: 12px 86px;
+    display: block;
+    border-top: 1px solid #cecece;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 56px;
+  }
+
+  .intro__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 121%;
+    color: var(--additional-color);
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 24px;
+  }
+
+  .intro__link::before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 4;
+  }
+
+  .intro__link--address {
+    margin-right: 32px;
+  }
+
+  .intro__link--address::before {
+    content: url(../../assets/intro/map.svg);
+  }
+
+  .intro__link--route::before {
+    content: url(../../assets/intro/route.svg);
+  }
+
+  .intro__link--time::before {
+    content: url(../../assets/intro/clock.svg);
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro {
+    padding: 12px 310px;
+  }
+}

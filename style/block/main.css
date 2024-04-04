@@ -1,0 +1,247 @@
+.main {
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__header {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #3e3e3e;
+  width: 335px;
+  margin-bottom: 24px;
+}
+
+.main__card {
+  display: flex;
+  flex-direction: column;
+  background: var(--main-gradient);
+  border-radius: 12px;
+  width: 335px;
+  min-height: 194px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 16px;
+  position: relative;
+}
+
+.main__card::after {
+  width: 149px;
+  height: 68px;
+  position: absolute;
+  right: 8px;
+  bottom: 0px;
+}
+
+.main__card--1::after {
+  content: url(../../assets/main/mobile/card_1.png);
+}
+
+.main__card--2::after {
+  content: url(../../assets/main/mobile/card_2.png);
+}
+
+.main__card--3::after {
+  content: url(../../assets/main/mobile/card_3.png);
+}
+
+.main__card--4::after {
+  content: url(../../assets/main/mobile/card_4.png);
+}
+
+.main__card--title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: #fff;
+  width: 214px;
+  margin-bottom: 8px;
+}
+
+.main__card--description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #fff;
+  width: 284px;
+  margin-bottom: 33px;
+}
+
+.main__card--btn {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 148px;
+  height: 41px;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.main__card--btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 600px) {
+  .main {
+    min-width: 768px;
+  }
+
+  .main__header--wrapper {
+    padding-right: 70px;
+  }
+
+  .main__header {
+    font-size: 24px;
+    line-height: 121%;
+    width: 603px;
+    margin-bottom: 32px;
+  }
+
+  .main__card {
+    padding: 32px;
+    width: 680px;
+    min-height: 233px;
+  }
+
+  .main__card::after {
+    width: 297px;
+    height: 123px;
+    right: 20px;
+  }
+
+  .main__card--1::after {
+    content: url(../../assets/main/tablet/card_1.png);
+  }
+
+  .main__card--2::after {
+    content: url(../../assets/main/tablet/card_2.png);
+  }
+
+  .main__card--3::after {
+    content: url(../../assets/main/tablet/card_3.png);
+  }
+
+  .main__card--4::after {
+    content: url(../../assets/main/tablet/card_4.png);
+  }
+
+  .main__card--title {
+    width: 278px;
+    font-size: 18px;
+    line-height: 122%;
+    margin-bottom: 12px;
+  }
+
+  .main__card--description {
+    width: 306px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    min-width: 1024px;
+  }
+
+  .main__header--wrapper {
+    padding-right: 250px;
+  }
+
+  .main__card::after {
+    width: 217px;
+    height: 93px;
+    right: 6px;
+  }
+
+  .main__card--1::after {
+    content: url(../../assets/main/laptop/card_1.png);
+  }
+
+  .main__card--2::after {
+    content: url(../../assets/main/laptop/card_2.png);
+  }
+
+  .main__card--3::after {
+    content: url(../../assets/main/laptop/card_3.png);
+  }
+
+  .main__card--4::after {
+    content: url(../../assets/main/laptop/card_4.png);
+  }
+
+  .main__card--list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1280px;
+  }
+
+  .main__card {
+    width: 420px;
+    min-height: 233px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main__header--wrapper {
+    padding-right: 410px;
+  }
+
+  .main__header {
+    width: 858px;
+  }
+
+  .main__card--list {
+    display: block;
+    columns: 3;
+  }
+
+  .main__card--1,
+  .main__card--4 {
+    width: 424px;
+    height: 512px;
+  }
+
+  .main__card--2,
+  .main__card--3 {
+    width: 424px;
+    height: 250px;
+  }
+
+  .main__card--1::after {
+    content: url(../../assets/main/desktop/card_1.png);
+    width: 400px;
+    height: 192px;
+    right: 12px;
+  }
+
+  .main__card--2::after {
+    content: url(../../assets/main/desktop/card_2.png);
+    width: 304px;
+    height: 207px;
+    right: -55px;
+    bottom: -15px;
+  }
+
+  .main__card--3::after {
+    content: url(../../assets/main/desktop/card_3.png);
+    width: 125px;
+    height: 126px;
+    right: 29px;
+    bottom: 30px;
+  }
+
+  .main__card--4::after {
+    content: url(../../assets/main/desktop/card_4.png);
+    width: 413px;
+    height: 261px;
+    right: 12px;
+  }
+}
